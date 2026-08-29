@@ -1,97 +1,31 @@
-# Especificación de Requerimientos
+## RF-02: Consultar las tutorías disponibles.
 
-## 1. Descripción del sistema
+### Resumen: 
+El sistema debe permitir a los estudiantes consultar las tutorías que se encuentran disponibles.
 
-## 2. Integrantes
+### Entradas:
 
-- Nombre:
-- Nombre:
-- Nombre:
-- Nombre:
-- Nombre:
-
-## 3. Requerimientos Funcionales
-
-### RF-01 - [Nombre del requerimiento]
-
-#### Resumen
-
-#### Entradas
-
-| Entrada | Tipo de dato | Descripción |
-|---|---|---|
-
-#### Reglas o condiciones
-
-#### Salidas
-
-| Salida | Tipo de dato | Descripción |
-|---|---|---|
-
-#### Resultado esperado
+| Campo               | Tipo de dato |
+|---------------------|--------------|
+| Fecha de la tutoría | LocalDate    |
+| Asignatura          | String       |
 
 
-### RF-02 - [Nombre del requerimiento]
+### Condiciones necesarias:
+Deben haber tutorías registradas en el sistema.
 
-#### Resumen
+### Salidas:
 
-#### Entradas
+| Campo                                     | Tipo de dato  |
+|-------------------------------------------|---------------|
+| Listado de tutorías disponibles           | ArrayList     |
+| Identificador único de la tutoría (id)    | String        |
+| Tema                                      | String        |
+| Profesor                                  | String        |
+| Fecha                                     | LocalDate     |
+| Hora                                      | LocalDateTime |
+| Cantidad de cupos                         | Int           |
+| Mensahe de error al no encontrar Tutorías | String        |
 
-| Entrada | Tipo de dato | Descripción |
-|---|---|---|
-
-#### Reglas o condiciones
-
-#### Salidas
-
-| Salida | Tipo de dato | Descripción |
-|---|---|---|
-
-#### Resultado esperado
-
-
-### RF-03 - [Nombre del requerimiento]
-
-#### Resumen
-
-#### Entradas
-
-| Entrada | Tipo de dato | Descripción |
-|---|---|---|
-
-#### Reglas o condiciones
-
-#### Salidas
-
-| Salida | Tipo de dato | Descripción |
-|---|---|---|
-
-#### Resultado esperado
-
-
-### RF-04 - [Nombre del requerimiento]
-
-#### Resumen
-
-#### Entradas
-
-| Entrada | Tipo de dato | Descripción |
-|---|---|---|
-
-#### Reglas o condiciones
-
-#### Salidas
-
-| Salida | Tipo de dato | Descripción |
-|---|---|---|
-
-#### Resultado esperado
-
-
-## 4. Gestión de Versiones
-
-### Ramas utilizadas
-
-### Proceso de integración
-
-### Conflictos encontrados
+### Resultado:
+Se espera que el sistema le muestre las tutorías disponibles al estudiante con su respectiva información acorde a la búsqueda previamente realizada.
