@@ -1,31 +1,103 @@
-## RF-02: Consultar las tutorías disponibles.
-    
-### Resumen: 
-El sistema debe permitir a los estudiantes consultar las tutorías que se encuentran disponibles.
+# Especificación de Requerimientos
 
-### Entradas:
+## 1. Descripción del sistema
 
-| Campo               | Tipo de dato | Descripción                                            |
-|---------------------|--------------|--------------------------------------------------------|
-| Fecha de la tutoría | String       | Fecha requerida para filtrar las tutorías disponibles. |
-| Asignatura          | String       | Tema o asignatura opcional para filtrar la búsqueda.   |
+## 2. Integrantes
+
+- Nombre:
+- Nombre:
+- Nombre:
+- Nombre:
+- Nombre:
+
+## 3. Requerimientos Funcionales
+
+### RF-01 - [Nombre del requerimiento]
+
+#### Resumen
+
+#### Entradas
+
+| Entrada | Tipo de dato | Descripción |
+|---|---|---|
+
+#### Reglas o condiciones
+
+#### Salidas
+
+| Salida | Tipo de dato | Descripción |
+|---|---|---|
+
+#### Resultado esperado
 
 
-### Condiciones necesarias:
-Deben haber tutorías registradas en el sistema.
+### RF-02 - [Nombre del requerimiento]
 
-### Salidas:
+#### Resumen
 
-| Campo                                     | Tipo de dato | Descripción                                                   |
-|-------------------------------------------|--------------|---------------------------------------------------------------|
-| Listado de tutorías disponibles           | String       | Lista con las tutorías encontradas según los filtros.         |
-| Identificador único de la tutoría (id)    | String       | Identificador generado por el sistema para cada tutoría.      |
-| Tema                                      | String       | Asignatura o tema a tratar en la tutoría.                     |
-| Profesor                                  | String       | Código o nombre del docente responsable de la tutoría.        |
-| Fecha                                     | String       | Fecha programada para la tutoría.                             |
-| Hora                                      | String       | Hora de inicio de la tutoría.                                 |
-| Cantidad de cupos                         | Int          | Número de cupos disponibles actualmente.                      |
-| Mensaje de error al no encontrar Tutorías | String       | Mensaje de notificación cuando no hay tutorías disponibles.   |
+#### Entradas
 
-### Resultado:
-Se espera que el sistema le muestre las tutorías disponibles al estudiante con su respectiva información acorde a la búsqueda previamente realizada.
+| Entrada | Tipo de dato | Descripción |
+|---|---|---|
+
+#### Reglas o condiciones
+
+#### Salidas
+
+| Salida | Tipo de dato | Descripción |
+|---|---|---|
+
+#### Resultado esperado
+
+
+### RF-03 - [Nombre del requerimiento]
+
+#### Resumen
+
+#### Entradas
+
+| Entrada | Tipo de dato | Descripción |
+|---|---|---|
+
+#### Reglas o condiciones
+
+#### Salidas
+
+| Salida | Tipo de dato | Descripción |
+|---|---|---|
+
+#### Resultado esperado
+
+
+
+### RF-04 - Cancelar participación en la tutoría
+
+#### Resumen
+El sistema debe permitir a un estudiante que esté inscrito en una tutoría cancelar su participación en ella.
+#### Entradas
+
+| Entrada | Tipo de dato | Descripción                  |
+|---|---|------------------------------|
+|Código estudiantil|String| Código del estudiante activo |
+|Identificador único de la tutoría|String| Id de la tutoría             |
+
+#### Reglas o condiciones
+* El estudiante debe estar inscrito previamente en la tutoría.
+* La tutoría no ha dado inicio.
+
+#### Salidas
+
+| Salida | Tipo de dato | Descripción                                             |
+|---|---|---------------------------------------------------------|
+|Mensaje de información de la operación|String| Mensaje informativo de la cancelación de la inscripción |
+|Eliminar la inscripción|Boolean| Eliminar la inscripción del sistema                     |
+|Cupo liberado|Boolean| Libera el cupo en el sistema                            |
+#### Resultado esperado
+Se espera que el sistema elimine la inscripción del estudiante, se libere el cupo y se envié el mensaje informativo de la operación realizada.
+## 4. Gestión de Versiones
+
+### Ramas utilizadas
+
+### Proceso de integración
+
+### Conflictos encontrados
