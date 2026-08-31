@@ -40,8 +40,9 @@ fácilmente.
 
 #### Salidas
 
-| Salida | Tipo de dato | Descripción |
-|---|---|---|
+| Salida           | Tipo de dato | Descripción |
+|------------------|--------------|---|
+| Mensaje de exito | String       |	Mensaje que informa sobre la creación de la tutoria de haber sido creada con exito|
 
 #### Resultado esperado
 
