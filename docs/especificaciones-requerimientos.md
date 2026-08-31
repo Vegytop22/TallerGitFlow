@@ -1,4 +1,4 @@
-    # Especificación de Requerimientos
+# Especificación de Requerimientos
 
 ## 1. Descripción del sistema
 
