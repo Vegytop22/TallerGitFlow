@@ -5,10 +5,9 @@
 ## 2. Integrantes
 
 - Juan Ángel Tobón Perdomo
-- Nombre:
-- Nombre:
-- Nombre:
-- Nombre:
+- Mariana Fuertes Campo
+- Edisson David Ramirez Guevara
+- Linda Isabel Plazas Cortés
 
 ## 3. Requerimientos Funcionales
 
