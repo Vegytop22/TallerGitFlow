@@ -18,7 +18,38 @@ En cada operación el sistema valida las condiciones necesarias e informa al usu
 
 ## 3. Requerimientos Funcionales
 
+### RF-01 - Registrar tutoria
 
+#### Resumen
+El sistema debe permitir a los profesores registrar sus tutorías para que los estudiantes puedan visualizarlas
+fácilmente.
+
+#### Entradas
+
+| Entrada              | Tipo de dato | Descripción                                                       |
+|----------------------|--------------|-------------------------------------------------------------------|
+| Código de profesor   | String       | Identificador unico de cada profesor                              |
+| Tema de la tutoria   | String       | Tema que se tratara en la tutoria                                 |
+| Fecha                | String       | Fecha en la que se dara la tutoria                                |
+| Hora de inicio       | String       | Hora a la que iniciara la tutoria                                 |
+| Maximo de asistencia | Int          | La cantidad maxima de estudiantes que pueden asistir a la tutoria |
+
+
+#### Reglas o condiciones
+La fecha de la tutoría NO puede ser anteriror a la fecha actual.
+La cantidad maxima de asistencia debe ser un valor entre 1 y 10.
+
+#### Salidas
+
+| Salida           | Tipo de dato | Descripción                                                                        |
+|------------------|--------------|------------------------------------------------------------------------------------|
+| Mensaje de exito | String       | Mensaje que informa sobre la creación de la tutoria de haber sido creada con exito |
+
+#### Resultado esperado
+
+Internamente, el sistema registrara la tutoria con los datos suministrados, transformando los que necesite (fecha y hora
+de inicio a LocalDate y LocalTime respectivamente), asignara un identificador único a la tutoria e imprimira el mensaje
+de exito
 
 ### RF-02 - [Nombre del requerimiento]
 
